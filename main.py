@@ -15,7 +15,7 @@
 # the following pairs of words:
 # "hard" --> "easy"
 # "bad" --> "good"
-# and display the sentence with both words modified.
+# and display the sentence with both words modified. 
 
 #################################string properties################################
 
