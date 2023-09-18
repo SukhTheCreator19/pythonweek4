@@ -128,7 +128,7 @@ print(transportation_means)
 # watermelon
 
 fruits = ["apple", "banana", "mango", "cherry", "watermelon"]
-deleted_item = fruits.pop(3)
+deleted_item = fruits.pop(2)
 print(fruits)
 #######################################Dictionaries###############################
 # Dictionaries Practice #1
