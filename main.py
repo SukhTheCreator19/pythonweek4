@@ -1,5 +1,61 @@
+# #############################complete slide 1 challenge from week 4 slideshow##########
+# #############################20 minutes################################################
 
-##################################### String Methods#################################
+# ##########################Reviewing somethings
+
+# # indexing strings -- slide 4
+# my_text = 'this is a text'
+# result = my_text  #get the index of the letter a
+# print(result)
+# print(my_text[8:9])
+# #get the index of the third letter from the end of the text
+# print(result[-3])
+
+# # find the index of the letter s
+# print(result.find("s"))
+
+# ###slide 5  
+# # string[start:stop:step] 
+# #example 
+# # text = "Hello, World!"
+# # print(text[7:12])  # prints "World" 
+# text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# # Get the substring CDE and put in a variable
+# letters = text.find("CDE")
+# print(letters)
+# #get the first letter all the way to the 4th letter
+# print(text[0:4])
+# #get the first letter to the final letter and skip every 3rd letter
+# print(text[::3])
+# # Built-in methods:
+# # Python has a variety of built-in methods to work with substrings.
+
+# # a. str.find():
+# # This method returns the lowest index of the substring if found in the given string. If it's not found, it returns -1.
+# # text = "Hello, World!"
+# # print(text.find("World"))  # prints 7
+# # print(text.find("Earth"))  # prints -1
+
+# #################################Extracting Sub-Strings###################################
+# # Extracting Sub-Strings Practice #1
+# # Extract the first word of the following sentence using slicing, and display it on the screen:
+# # "Controlling complexity is the essence of programming"
+# # Hint: "Controlling" is 11 characters long.
+# sentence = "Controlling complexity is the essence of programming"
+# print(sentence.find("Controlling"))
+# print(sentence[0:12])
+# # Extracting Sub-Strings Practice #2
+# # Take every third character starting from the ninth to the end of the sentence, and print the result.
+# # "Never trust a computer you can't throw out a window"
+# sent1 = "Never trust a computer you can't throw out a window"
+# print(sent1[9::3])
+# # Extracting Sub-Strings Practice #3
+# # Reverses the position of all the characters in the following sentence and displays the result on the screen.
+
+# sent2 = "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
+# print(sent2[::-1])
+
+# ##################################### String Methods#################################
 # String Methods Practice #1
 # Print the following text in uppercase, using the specific string method:
 # "Especially in electronic communications, writing in all caps is equivalent to yelling."
@@ -38,17 +94,30 @@
 # Check the Python Documentation to find the description of the len() function. Then, display on the screen the length (in number of characters) of the word electroencephalographist.
 
 ################################list###################################################
+list1 = [1,2,3,4,5,6,7,8,9,10]
+list2 = ["a","b","c","d","e","f","g","h","i","j"]
+
+print(list1[2:8])
+
 # Lists Practice #1
 # Print the following list on the screen:
 # ["Python", "is", "easy", "to", "learn"]
+sentence = ["Python", "is", "easy", "to", "learn"]
+print(sentence)
 
 # Lists Practice #1
 # Create a list with 5 elements, inside the variable my_list. You can include strings, booleans, numbers, etc.
+
+my_list = [19, "Python", 9, "Singh", "Math"]
 
 # Lists Practice #2
 # Add the element "motorcycle" to the following list of means of transportation:
 # transportation_means = ["plane", "car", "ship", "bicycle"]
 # You must not modify the already supplied line of code, but must use the appropriate list method to add a new element.
+
+transportation_means = ["plane", "car", "ship", "bicycle"]
+transportation_means.append("motorcycle")
+print(transportation_means)
 
 # Lists Practice #3
 # Use the pop() method to remove the third item from the following list called fruits, and store it in a variable called deleted_item. Use list methods without altering the line of code already supplied.
@@ -58,6 +127,9 @@
 # cherry
 # watermelon
 
+fruits = ["apple", "banana", "mango", "cherry", "watermelon"]
+deleted_item = fruits.pop(3)
+print(fruits)
 #######################################Dictionaries###############################
 # Dictionaries Practice #1
 # Create a dictionary called fruits with the following key-value pairs:
